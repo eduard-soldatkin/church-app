@@ -7,11 +7,11 @@
 // В production используйте переменные окружения
 
 export const TELEGRAM_CONFIG = {
-  // Bot Token от @BotFather
-  BOT_TOKEN: '8957414613:AAEFOs-4xAA6YUetbNHA16id5_14Ku2-JJU',
+  // Bot Token от @BotFather (используется переменная окружения)
+  BOT_TOKEN: process.env.EXPO_PUBLIC_TELEGRAM_BOT_TOKEN || '8957414613:AAFCrt-ptwLWsndJlK77VNOGw1_hvtvNi-o',
   
   // Channel ID (закрытый канал для хранения проповедей)
-  CHANNEL_ID: '-3565559545',
+  CHANNEL_ID: process.env.EXPO_PUBLIC_TELEGRAM_CHANNEL_ID || '-3565559545',
   
   // Максимальное количество проповедей для загрузки
   MAX_SERMONS: 50,
