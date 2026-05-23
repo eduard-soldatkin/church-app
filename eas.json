@@ -1,0 +1,38 @@
+{
+  "cli": {
+    "version": ">= 5.0.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "preview2": {
+      "ios": {
+        "resourceClass": "large"
+      }
+    },
+    "preview3": {
+      "developmentClient": true
+    },
+    "production": {},
+    "testflight": {
+      "ios": {
+        "buildConfiguration": "Release"
+      }
+    }
+  },
+  "submit": {
+    "production": {},
+    "testflight": {
+      "ios": {
+        "appleId": "eduard.soldatkin@gmail.com",
+        "ascAppId": "6772457357",
+        "appleTeamId": "6XC4JAU749"
+      }
+    }
+  }
+}
